@@ -538,6 +538,10 @@ body.lock {
         width: 100%;
     }
 
+    #header .header-link.last {
+        padding: 0;
+    }
+
     #header .header-link .link {
         cursor: pointer;
         text-align: left;

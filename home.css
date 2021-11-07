@@ -309,6 +309,10 @@ body.lock {
     padding: 0 6px;
 }
 
+#header .header-link.last {
+    padding: 0 0 0 6px;
+}
+
 #header .header-link.current {
     width: 160%;
 }

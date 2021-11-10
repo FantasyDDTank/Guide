@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>奇幻弹弹堂 - 副本</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="GameScript.css">
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav id="header">
+        <div class="header-content">
+            <!-- Nav - Mobile -->
+            <ul class="header-content-mobile">
+                <li class="header-item header-menuicon">
+                    <label class="header-menuicon-label">
+                        <span class="header-menuicon-bread header-menuicon-bread-top">
+                            <span class="header-menuicon-bread-crust header-menuicon-bread-crust-top"></span>
+                        </span>
+                        <span class="header-menuicon-bread header-menuicon-bread-bottom">
+                            <span class="header-menuicon-bread-crust header-menuicon-bread-crust-bottom"></span>
+                        </span>
+                    </label>
+                </li>
+                <li class="header-item header-item-logo">
+                    <a class="header-link mobile-logo" href="index.html">
+                        <button class="logo">奇幻弹弹堂</button>
+                    </a>
+                </li>
+            </ul>
+            <!-- Nav - Quick Links -->
+            <div class="list-container">
+                <ul class="header-list">
+                    <li class="header-item header-item-logo">
+                        <a class="header-link" href="index.html">
+                            <button class="logo">奇幻弹弹堂</button>
+                        </a>
+                    </li>
+                    <li class="header-item header-item-menu">
+                        <a class="header-link header-links current" href="GameScript.html">
+                            <button class="link">
+                                副本
+                                <span class="des">
+                                    与副本相关的内容
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links" href="bugcom.html">
+                            <button class="link">
+                                漏洞合集
+                                <span class="des">
+                                    游戏漏洞和解决方法
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links" href="Topup.html">
+                            <button class="link">
+                                充值配套
+                                <span class="des">
+                                    对比和生成低配、高配和顶配
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links" href="Tec.html">
+                            <button class="link">
+                                技术赛
+                                <span class="des">
+                                    第一届技术赛对局内容
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links last" href="gh.html">
+                            <button class="link">
+                                公会专属
+                                <span class="des">
+                                    【傲视天下】公会会员专属登录页面
+                                </span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header-blur"></div>
+    <script src="js/header.js"></script>
+    <!-- Main -->
+    <main class="main">
+        <!-- Main -Ribbon -->
+        <section class="homepage-section collection-module">
+            <div class="module-content">
+                <div class="ribbon-notice">
+                    <div class="section-content section-content-notice">
+                        <span class="ribbon-copy variant">
+                            本网页由玩家所创，非官方所经营。以下所有内容有任何错误，还请海涵。内容将持续更新，敬请期待!
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Main Content -->
+        <section class="main-module">
+            <div class="section-content">
+                <div class="wrapper">
+                    <div class="wrapper-container">
+                        <div class="wrapper-background">
+                            <div class="wrapper-box">
+                                <div class="box">
+                                    <button class="links" onclick="openEventP(event, 'DROP')" id="DOpen">副本掉落</button>
+                                    <button class="links" onclick="openEventP(event, 'GSG')" id="two">副本攻略</button>
+                                    <div class="segmentnav-selection-background"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 副本掉落 -->
+                <div id="DROP" class="links-content">
+                    <!-- 标题 -->
+                    <div class="title-container">
+                        <div class="container">
+                            <div class="title">
+                                <span>
+                                    副本掉落
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 资讯 -->
+                    <div class="contain-container">
+                        <div class="small-container information">
+                            <div class="container">
+                                <div class="title">
+                                    <span>
+                                        使用说明
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    <span>
+                                        以下内容可采用搜索的方式来搜索。
+                                        <br><br>
+                                        【奇幻】万圣节糖果，【奇幻】鬼魂，【奇幻】南瓜👉一概输入【奇幻活动素材】
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-container">
+                            <input type="text" id="myInput" onkeyup="myS1Function()" placeholder="输入“素材”或者“副本”名字" title="输入名字">
+                        </div>
+                        <ul id="myUL">
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-蚂蚁之巢
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                天天向上，极·飞天跑车，周年白金手链，周年白金之戒，朱雀石5级，玄武石5级，青龙石5级，白虎石5级，进阶石，4级经验药水，超级经验药水，神秘卡盒，星宿之佑高级碎片，经验手镯，经验之戒，西瓜，【奇幻】女王的弓箭，【奇幻】红宝石
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-小鸡快跑
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                极·爱心便当，极·工作狂，超级经验药水，修炼药水2级，修炼药水3级，魔法修炼药水2级，开孔钻头1级，开孔钻头2级，凝神药水1级，凝神药水2级，启灵珠1级，经验手镯，经验之戒，经验手镯+1，经验之戒+1，真·小鸡高级碎片，荔枝，【奇幻】毒鸡蛋，【奇幻】蓝宝石
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-啵咕王城
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                爱心回力镖，真·远古竹枪，真·牛头怪，真·天使之赐，天使之赐，巴罗夫盾牌，小毒鸡，闪耀绿芽，稀有小啵咕，锻造石，精致兽灵帽，精致兽灵斧，精致兽灵甲，初级宠物粮，中级宠物粮，洗髓丹，真·爱心回力标高级碎片，进化石，榴莲，【奇幻】定时炸弹，【奇幻】绿宝石
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-邪神部落
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                真·三色花的祝福，超级经验药水，攻击祝福宝珠，防御祝福宝珠，属性祝福宝珠，坐骑之灵，宠物之灵，坐骑图鉴碎片，守护之心，荣誉精华，魔法宝珠-伤害Lv15，魔法宝珠-伤害Lv13，星宿之佑高级碎片，守护法典高级碎片，灵魂石，樱桃，荔枝，【奇幻】邪神的面具，【奇幻】紫宝石
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-黑暗堡垒
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                恶魔宝珠·红，高级宠物粮，高级祭品，开孔钻头3级，低级祭品，破碎手册，完整手册，魔法宝珠-攻击Lv17，魔法宝珠-攻击Lv15，灵魂石，怒龙赤炎镯+5，荣誉精华，经验之戒+3，千叶草，芒果，荔枝，【奇幻】牛头的角，【奇幻】红宝石，【奇幻】蓝宝石，【奇幻】初段进阶证，【奇幻】贰段进阶证，【奇幻】叄段进阶证，【奇幻】锻造石
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-龙巢之战
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                璀璨手册，开孔钻头4级，恶魔宝珠·黄，开孔钻头2级，开孔钻头3级，恶魔宝珠·红，兽皮，秘银，千叶草，萌化石，灵魂石，破碎手册，糖果，芒果，榴莲，【奇幻】紫宝石，【奇幻】绿宝石，【奇幻活动素材】
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-啵咕运动会
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                灵魂石，恶魔宝珠·蓝，初级印刻礼包，荣誉精华，魂晶盒（小），开孔钻头3级，开孔钻头4级，真·高级捣蛋鬼碎片，冰块，冰勋章，无籽西瓜，【奇幻】绿宝石，【奇幻】蓝宝石，【奇幻活动素材】
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-时空漩涡
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                恶魔宝珠·绿·，中级宠物粮，随机魔石礼包，经验魔石，陨金，魔钻，灵魂石，初级经验魔石，注灵石，超级经验药水，风勋章，火勋章，土勋章，木勋章，开孔钻头4级，开孔钻头5级，【奇幻】蓝宝石，【奇幻】紫宝石，【奇幻活动素材】
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-萌爱副本 / 足球副本
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                战魂丹，紫晶石，高级祭品，坐骑图鉴碎片，粉尘符文，开孔钻头6级，荣誉精华，超级经验药水，攻击宝珠Lv4，防御宝珠Lv4，属性宝珠Lv4，心愿石，灵愿石，【奇幻活动素材】
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-暴富副本(每周六日开启)
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                【奇幻】⭐点-券-箱-子⭐
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-奇幻海域
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                【奇幻】奇幻拼图碎片，战魂丹，灵魂石，注灵石，封印石，解封石，高级祭品，洗髓丹，启灵珠3级，卡魂宝珠，优秀符文，【奇幻活动素材】
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-齐心合力
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                情定终身+4，高级祭品，封印石，魔法宝珠-伤害Lv17，魔法宝珠-伤害Lv19，烈焰神龙碎片，陆行鸟图鉴卡，【奇幻】⭐帽子箱⭐，【奇幻】⭐衣服箱⭐，【奇幻】⭐头发箱⭐，【奇幻】⭐眼睛箱⭐，【奇幻】极·远古竹枪，大力娃，千里娃，铁臂娃，唠叨老豆，顽皮野孩儿，【奇幻】初段进阶证，【奇幻】贰段进阶证，【奇幻】叄段进阶证，【奇幻】锻造石，【奇幻活动素材】，限时添加：【奇幻】拿你命3000
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-机械围城（简单）
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                初级坐骑升级石，中级坐骑升级石，【奇幻】奇幻拼图碎片，图腾符石，属性宝珠Lv4，【奇幻】⭐脸颊箱⭐，【奇幻】⭐眼镜箱⭐，【奇幻】⭐套装箱⭐，【奇幻】⭐翅膀箱⭐，【奇幻】初段进阶证，【奇幻】贰段进阶证，【奇幻】叄段进阶证，【奇幻】锻造石，【奇幻活动素材】
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-机械围城（普通）
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                璀璨手册，初级坐骑升级石，中级坐骑升级石，注灵石，【奇幻】奇幻拼图碎片，图腾符石，属性宝珠Lv4，【奇幻】⭐脸颊箱⭐，【奇幻】⭐眼镜箱⭐，【奇幻】⭐套装箱⭐，【奇幻】⭐翅膀箱⭐，【奇幻】拿你命3000，F炮图鉴卡，精致牛头斧，精致牛头帽，精致牛头甲，聚水娃，隐身娃，喷火娃，忠心随从，憨厚大叔，【奇幻】初段进阶证，【奇幻】贰段进阶证，【奇幻】叄段进阶证，【奇幻】锻造石，【奇幻】修炼潜能石，【奇幻活动素材】
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-奇幻宝珠（简单）
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                攻击宝珠Lv4，防御宝珠Lv4，属性宝珠Lv4，魔法宝珠-伤害Lv17，魔法宝珠-穿甲Lv15，魔法宝珠-弱化Lv15，魔法宝珠-吸收Lv15，魔法宝珠-恢复Lv15，魔法宝珠-防御Lv13，魔法宝珠-敏捷Lv13，魔法宝珠-免坑Lv13，魔法宝珠-减伤Lv13，魔法宝珠-灵敏Lv11，魔法宝珠-伤害Lv11，魔法宝珠-护甲Lv11，魔法宝珠-引导Lv11
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-奇幻宝珠（普通）
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                攻击宝珠Lv4，防御宝珠Lv4，属性宝珠Lv4，魔法宝珠-伤害Lv19，魔法宝珠-反射Lv17，魔法宝珠-攻击Lv17，魔法宝珠-幸运Lv17，魔法宝珠-灼烧Lv17，魔法宝珠-激怒Lv15，魔法宝珠-攻击Lv15，魔法宝珠-护甲Lv15，魔法宝珠-灵敏Lv15，魔法宝珠-核爆Lv13，魔法宝珠-重伤Lv13，魔法宝珠-石肤Lv13，魔法宝珠-防御Lv13
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-风雨同舟（简单）
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                灵魂石，注灵石，千叶草，进化石，炼化石，高级宠物粮，经验手镯+3，经验之戒+3，10周年纪念项链初级碎片，【奇幻】奇幻拼图碎片，【奇幻活动素材】
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-风雨同舟（普通）
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                灵魂石，注灵石，千叶草，进化石，炼化石，高级宠物粮，经验手镯+4，经验之戒+4，9周年之戒，10周年纪念项链初级碎片，【奇幻】奇幻拼图碎片，紫影龙召唤卡，【奇幻】图鉴服装箱，【奇幻】图鉴脸颊箱，神通娃，金刚娃，她姥爷，时尚老母，疯狂大娘，【奇幻活动素材】
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-月黑风高
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                荣誉精华，攻击祝福宝珠，防御祝福宝珠，属性祝福宝珠，初级坐骑升级石，中级坐骑升级石，高级坐骑升级石，小白狐图鉴卡，女王大人，蝎子崽，蜈蚣精，顽皮小妹，激情小子，恶魔宝珠·蓝，恶魔宝珠·绿，红尘，紫弦，【奇幻活动素材】
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-印刻副本
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                魂晶盒（大），【奇幻】随机品质印刻礼包，【奇幻】随机卓越船长祝福礼包，【奇幻】随机卓越巫师礼赞礼包，【奇幻】随机卓越虚空力量礼包，【奇幻】随机卓越指挥艺术礼包，【奇幻】随机卓越啵咕印记礼包，【奇幻】随机卓越邪神印记礼包，【奇幻】随机卓越堡垒印记礼包，【奇幻】随机精良船长祝福礼包，【奇幻】随机精良巫师礼赞礼包，【奇幻】随机精良虚空力量礼包，【奇幻】随机精良指挥艺术礼包，【奇幻】随机精良啵咕印记礼包，【奇幻】随机精良邪神印记礼包，【奇幻】随机精良堡垒印记礼包
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-神灯的智慧
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                【奇幻】爱书如命，【奇幻】聪明一世印记，【奇幻】聪明伶俐印记，魔法宝珠-伤害Lv21，F炮图鉴卡，精致牛头斧，精致牛头帽，精致牛头甲，炼化石，高级宠物粮，【奇幻活动素材】
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                单人副本-勇士试炼3
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                中级宠物粮，灵露丹，千叶草，萌化石，心愿石，灵愿石，图腾符石
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                单人副本-勇士试炼4
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                坐骑升级丹，低级祭品，高级祭品，图腾符石
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                单人副本-勇士试炼6
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                9级宝珠盒子，荣誉精华，图腾符石，启灵珠2级
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                噩梦副本-魔蚁之巢
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                【奇幻】游戏达人，【奇幻】蚂蚁勇士，神秘卡盒，【奇幻】玄武精魄石，【奇幻】朱雀精魄石，【奇幻】青龙精魄石，【奇幻】白虎精魄石，冰晶凤凰高级封印，远古幼龙高级封印，经验手镯+5，璀璨手册，荣誉精华
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                噩梦副本-小鸡快跑
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                【奇幻】噩梦·疯狂小鸡，【奇幻】噩梦·疯狂小鸡，【奇幻】噩梦·小鸡，【奇幻】圣斗士随机礼包，【奇幻】百年潜能石，经验之戒+5，荣誉精华，神秘卡盒，【奇幻】玄武精魄石，【奇幻】朱雀精魄石，【奇幻】青龙精魄石，【奇幻】白虎精魄石
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                噩梦副本-月黑风高
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                荣誉精华，攻击祝福宝珠，防御祝福宝珠，属性祝福宝珠，初级坐骑升级石，中级坐骑升级石，高级坐骑升级石，小白狐图鉴卡，女王大人，蝎子崽，蜈蚣精，顽皮小妹，激情小子，恶魔宝珠·蓝，恶魔宝珠·绿，红尘，紫弦，【奇幻活动素材】
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                活动副本-海盗谜岛
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                一至三层礼包（超级经验药水*30，铜块*50，银丝*50，玉髓*50）
+                                                <br><br>
+                                                四层礼包（超级经验药水*50，桶块*50，银丝*50，玉髓*50，经验手镯+3*2，高级祭品*500，荣誉精华*100）
+                                                <br><br>
+                                                五层礼包（超级经验药水*30，桶块*50，银丝*50，玉髓*50，经验手镯+3*2，凝神药水2级*50，战魂丹*300，新春大红包*3）
+                                                <br><br>
+                                                六层礼包（超级经验药水*30，桶块*50，银丝*30，玉髓*50，新春大红包*3，神秘卡盒*400，注灵石*300）
+                                                <br><br>
+                                                七层礼包（超级经验药水*30，桶块*50，银丝*50，玉髓*50，新春大红包*3，9级宝珠盒子*50，坐骑图鉴碎片*100，初级坐骑升级石*100，中级坐骑升级石*50）
+                                                <br><br>
+                                                八层礼包（超级经验药水*30，桶块*50，银丝*50，玉髓*50，经验手镯+4*2，冰棒*5，腊八粥*5，五色饭*5）
+                                                <br><br>
+                                                九层礼包（超级经验药水*30，桶块*50，银丝*50，玉髓*50，经验手镯+4*2）
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                活动副本-冰雪之城（简单）
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                初级印刻礼包，中级印刻礼包，情定终身+3，周年白金之戒，周年白金手链，经验手镯+3，经验手镯+4，魂晶盒（小），魂晶盒（中），解封石，神秘卡盒，恶魔宝珠·黑，恶魔宝珠·红，恶魔宝珠·黄，恶魔宝珠·蓝，恶魔宝珠·绿，封印石，灵魂石
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                活动副本-冰雪之城（英雄）
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                恶魔宝珠·黄，恶魔宝珠·蓝，恶魔宝珠·绿，黄金足球高级碎片，收割者之镰碎片，魔法宝珠-攻击Lv15，魔法宝珠-护甲Lv13，灵魂石，远古幼龙高级封印，上古魔蛇高级封印，封印石，解封石，周年白金手链，9周年手链
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                高级副本-勇士竞技场（普通）
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                极·天使之赐高级碎片，进阶石，洗髓丹，魔法宝珠-攻击Lv17，魔法宝珠-攻击Lv15，神秘卡盒，开孔钻头3级，开孔钻头4级，开孔钻头5级，灵魂石，极·魔力水枪，荣誉精华
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                高级副本-勇士竞技场（英雄）
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                攻击祝福宝珠，防御祝福宝珠，属性祝福宝珠，冰晶凤凰高级封印，神秘卡盒，进阶石，荣誉精华，开孔钻头4级，开孔钻头5级，开孔钻头6级，弹王金杯，伯爵之剑，冰勋章，风勋章，木勋章，土勋章，火勋章
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 副本攻略 -->
+                <div id="GSG" class="links-content">
+                    <!-- 标题 -->
+                    <div class="title-container">
+                        <div class="container">
+                            <div class="title">
+                                <span>
+                                    副本攻略
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 资讯 -->
+                    <div class="contain-container">
+                        <div class="small-container information">
+                            <div class="container">
+                                <div class="title">
+                                    <span>
+                                        使用说明
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    <span>
+                                        以下内容可采用搜索的方式来搜索。内容只包含部分且比较困难的副本。
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-container">
+                            <input type="text" id="myInput2" onkeyup="myS2Function()" placeholder="输入“副本”名字" title="输入名字">
+                        </div>
+                        <ul id="myUL2">
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-黑暗堡垒
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>通关条件</b>：击败BOSS
+                                            <br>
+                                            先清除“鬼火”，BOSS跪下后才能对他造成伤害。
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-齐心合力
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>通关条件</b>：回合数到达51
+                                            <br>
+                                            给豆芽补血和清除附近的小兵，帮助豆芽撑过50回合。
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-机械围城
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>通关条件</b>：击败BOSS
+                                            <br>
+                                            先清除“机械蝴蝶”，清除完机械蝴蝶才能对机械龙（BOSS）造成伤害。
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-风雨同舟
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>通关条件</b>：一轮内击败两只BOSS
+                                            <br>
+                                            一轮内没击败两个BOSS，被击败的BOSS就会复活。无限循环，直到一轮内击败两只BOSS。（一轮：队伍内的玩家都轮到一次回合。）
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本 / 噩梦副本-月黑风高
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>通关条件</b>：完成指定鬼火的击杀10次
+                                            <br>
+                                            游戏内共有九只鬼火，各有数字标记在鬼火底下。玩家需要观看左边NPC的要求，击杀指定的鬼火。没击杀鬼火，击杀超过一个鬼火或者跳过回合，一律判定没完成要求，右边的豆芽会被扣血（50%）。玩家可以使用副手给豆芽补血。一旦豆芽的血量归零，挑战失败。
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-印刻副本
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>通关条件</b>：击杀6只BOSS
+                                            <br>
+                                            第一关：攻击BOSS。
+                                            <br>
+                                            第二关：攻击BOSS。攻击指定蝙蝠，BOSS的防护罩才会破。
+                                            <br>
+                                            第三关：正面攻击蓝绿色的BOSS。攻击镰刀人的玩家会直接死亡。
+                                            <br>
+                                            第四关：攻击BOSS。一回合只能造成20%伤害。
+                                            <br>
+                                            第五关：攻击BOSS。期间豆芽会给玩家补血。
+                                            <br>
+                                            第六关：攻击BOSS。玩家需要分开站位。
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-神灯的智慧
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>通关条件</b>：回答问题并击杀正确的BOSS（O / X）10次。
+                                            <br>
+                                            左上的NPC会问10题只有两个选项的问题。玩家需要攻击左边的炸弹人（O）或者右边的炸弹人（X）来回答问题。玩家有三次机会来试错。第四次回答错误，挑战失败。
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script>
+function openEventP(evt, cityName) {
+    var i, linkscontent, links;
+    linkscontent = document.getElementsByClassName("links-content");
+    for (i = 0; i < linkscontent.length; i++) {
+        linkscontent[i].style.display = "none";
+    }
+    links = document.getElementsByClassName("links");
+    for (i = 0; i < links.length; i++) {
+        links[i].className = links[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("DOpen").click();
+</script>
+<script type="text/javascript">
+function myS1Function() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+<script type="text/javascript">
+function myS2Function() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput2");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL2");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</html>

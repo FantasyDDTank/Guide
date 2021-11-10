@@ -21,7 +21,8 @@ let countDown = new Date('December 1, 2021 00:00:00').getTime(),
         // 1000 * 60 * 60 * 24
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("countdown-01").style.display = 'none';
+            document.getElementById("countdown-01-title").style.display = 'none';
+            document.getElementById("countdown-01-time").style.display = 'none';
         } else if (distance < 60000) {
             document.getElementById("c-days-01").style.display = 'none';
             document.getElementById("c-hours-01").style.display = 'none';

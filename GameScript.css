@@ -1041,8 +1041,8 @@ main {
     line-height: 21px;
     font-weight: normal;
     font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
-    height: 29px;
-    padding: 3px 40px 4px;
+    height: 21px;
+    padding: 6.5px 40px;
     width: calc(100% - (40px * 2) - (1px * 2));
     position: relative;
 }

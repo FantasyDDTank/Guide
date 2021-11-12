@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>奇幻弹弹堂 - 技术赛</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Tec.css">
+</head>
+<body>
+    <!-- Nav -->
+    <nav id="header">
+        <div class="header-content">
+            <!-- Nav - Mobile -->
+            <ul class="header-content-mobile">
+                <li class="header-item header-menuicon">
+                    <label class="header-menuicon-label">
+                        <span class="header-menuicon-bread header-menuicon-bread-top">
+                            <span class="header-menuicon-bread-crust header-menuicon-bread-crust-top"></span>
+                        </span>
+                        <span class="header-menuicon-bread header-menuicon-bread-bottom">
+                            <span class="header-menuicon-bread-crust header-menuicon-bread-crust-bottom"></span>
+                        </span>
+                    </label>
+                </li>
+                <li class="header-item header-item-logo">
+                    <a class="header-link mobile-logo" href="index.html">
+                        <button class="logo">奇幻弹弹堂</button>
+                    </a>
+                </li>
+            </ul>
+            <!-- Nav - Quick Links -->
+            <div class="list-container">
+                <ul class="header-list">
+                    <li class="header-item header-item-logo">
+                        <a class="header-link" href="index.html">
+                            <button class="logo">奇幻弹弹堂</button>
+                        </a>
+                    </li>
+                    <li class="header-item header-item-menu">
+                        <a class="header-link header-links" href="GameScript.html">
+                            <button class="link">
+                                副本
+                                <span class="des">
+                                    与副本相关的内容
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links" href="Bugcom.html">
+                            <button class="link">
+                                漏洞合集
+                                <span class="des">
+                                    游戏漏洞和解决方法
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links" href="Topup.html">
+                            <button class="link">
+                                充值配套
+                                <span class="des">
+                                    对比和生成低配、高配和顶配
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links current" href="Tec.html">
+                            <button class="link">
+                                技术赛
+                                <span class="des">
+                                    第一届技术赛对局内容
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links last" href="gh.html">
+                            <button class="link">
+                                公会专属
+                                <span class="des">
+                                    【傲视天下】公会会员专属登录页面
+                                </span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header-blur"></div>
+    <!-- Main -->
+    <main class="main">
+        <!-- Main -Ribbon -->
+        <section class="homepage-section collection-module">
+            <div class="module-content">
+                <div class="ribbon-notice">
+                    <div class="section-content section-content-notice">
+                        <span class="ribbon-copy variant">
+                            本网页由玩家所创，非官方所经营。以下所有内容有任何错误，还请海涵。
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Main Content -->
+        <section class="main-module">
+            <div class="section-content">
+                <div class="wrapper">
+                    <div class="wrapper-container">
+                        <div class="wrapper-background">
+                            <div class="wrapper-box">
+                                <div class="box">
+                                    <button class="links" onclick="openEventP(event, 'S1')" id="DOpen">第一届</button>
+                                    <div class="segmentnav-selection-background"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 技术赛 -->
+                <div class="basic-content">
+                    <div class="small-container information">
+                        <div class="container">
+                            <div class="title">
+                                <span>
+                                    比赛须知
+                                </span>
+                            </div>
+                            <div class="content">
+                                <span>
+                                    1.比赛使用武器为「极.雷霆」。
+                                    <br>
+                                    2.参赛者必须使用官方所提供的账号，游戏客服会在开始比赛前“私信”您账号和密码。
+                                    <br>
+                                    3.若发现在比赛专用的账号动过任何手脚或者提升战力，将一律废除比赛资格。
+                                </span>
+                            </div>
+                            <br>
+                            <div class="title">
+                                <span>
+                                    比赛规则
+                                </span>
+                            </div>
+                            <div class="content">
+                                <span>
+                                    禁止使用道具【引导】、【冻结冰弹】和【穿甲】与使用【POW】
+                                </span>
+                            </div>
+                            <br>
+                            <div class="title">
+                                <span>
+                                    注意
+                                </span>
+                            </div>
+                            <div class="content">
+                                <span>
+                                    1.报名后游戏角色名称不能改（一改直接取消资格）。
+                                    <br>
+                                    2.如果当天缺席就视为弃权（有大约5分钟时间等待玩家入场）。
+                                    <br>
+                                    3.会有两位GM分别在两队，进入游戏后进行托管，不会对竞技造成干扰。
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- S1 -->
+	                <div id="S1" class="links-content">
+	                	<!-- 图表 -->
+	                	<div class="small-container">
+	                        <div class="container" id="container-0">
+	                            <div class="title main-title" id="title-0">
+	                                <span>
+	                                    技术赛晋级图表
+	                                </span>
+	                            </div>
+	                            <div id="content-0">
+	                                <div class="image-content">
+	                                    <img src="Images/TEC/TEC.png">
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                	<!-- 64进32 -->
+                        <div class="small-container">
+                            <div class="container" id="container-1">
+                                <div class="title main-title" id="title-1">
+                                    <span>
+                                        64进32
+                                    </span>
+                                </div>
+                                <div id="content-1">
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年9月18日（星期六）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1300-1400</b>
+	                                                <br>
+	                                                最后的温柔 😁 vs 風尘暴ღ 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/elJRqPGMI90" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1500-1600</b>
+	                                                <br>
+	                                                小枫 😁 vs 冷火锅つ 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/2EUEKiYMxPw" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1700-1800</b>
+	                                                <br>
+	                                                葡萄杰 😁 vs 冰结龙ღ 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/1Cu9KDPui0I" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1900-2000</b>
+	                                                <br>
+	                                                Gucci 😥 vs ☪ゞ瑄瑄އއ 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/tiDB-5-AK2o" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年9月19日（星期日）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1300-1400</b>
+	                                                <br>
+	                                                ➶小无赖﹍๑ 😁 vs 铜蒙 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/IXyXnPv83Io" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1500-1600</b>
+	                                                <br>
+	                                                女人 😁 vs 萱草花 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/oMZyBIsUJXU" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1700-1800</b>
+	                                                <br>
+	                                                良性循环 😥 vs 冰╮ιCe┉╃ 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/yukmBe2tpV4" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1900-2000</b>
+	                                                <br>
+	                                                说声晚安好吗、 😥 vs 憨憨大叔 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/7bQiHaz-6MY" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年9月20日（星期一）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1300-1400</b>
+	                                                <br>
+	                                                ㄨ欲望ㄨ 😁 vs 悦⭐扬 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/NSGRX1-wBxI" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1500-1600</b>
+	                                                <br>
+	                                                小可爱么么哒 😥 vs よ網.等毕业 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/oUeY7w3JRJU" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1700-1800</b>
+	                                                <br>
+	                                                多雲ღ 😁 vs Tealive 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/32bz1P0NBlI" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1900-2000</b>
+	                                                <br>
+	                                                薄荷巧克巧克力 😥 vs 神奇の咖啡 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/liC5GhrM-bA" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年9月21日（星期二）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1300-1400</b>
+	                                                <br>
+	                                                宠妻の王子 😁 vs 白小纯 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/EEFvOuqTUmA" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1500-1600</b>
+	                                                <br>
+	                                                外掛 😁 vs 随心✗
+	                                                <a href="#" class="qq">玩家弃权</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1700-1800</b>
+	                                                <br>
+	                                                大雕11寸 😥 vs 暴风 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/TlG0ssmL1fQ" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1900-2000</b>
+	                                                <br>
+	                                                无课玩家 😁 vs G4ღ夜影 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/KyIl6rgX91Q" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年9月22日（星期三）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1300-1400</b>
+	                                                <br>
+	                                                艾斯Ace 😁 vs 叫花鸡 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/HShwFm-ixy0" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1500-1600</b>
+	                                                <br>
+	                                                摆渡人 😁 vs 暮光 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/aKUN2FXG2-8" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1700-1800</b>
+	                                                <br>
+	                                                半夏灬微凉 😥 vs 奇幻の夜神 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/XER0JwBR62M" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1900-2000</b>
+	                                                <br>
+	                                                星尘龙ღ 😁 vs 佛系Emo猪 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/RSyWxOWXGNg" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年9月23日（星期四）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1300-1400</b>
+	                                                <br>
+	                                                小紅兒 😁 vs Aka Bii 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/GyNLdqLvTd4" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1500-1600</b>
+	                                                <br>
+	                                                ღ叔叔ღ 😥 vs LUVRYUJIN 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/ZUzxlbB-S08" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1700-1800</b>
+	                                                <br>
+	                                                梧桐 😁 vs 多多 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/F90d-UEcqFY" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1900-2000</b>
+	                                                <br>
+	                                                慈慈 😁 vs ༄OroChi೭狂 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/MtF32_0YvZA" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+	                                    <div class="title">
+	                                        2021年9月24日（星期五）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1300-1400</b>
+	                                                <br>
+	                                                ★Queen 😁 vs k567294381 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/KOqrRTNq1L4" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1500-1600</b>
+	                                                <br>
+	                                                白米饭 😥 vs 波加曼° 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/UwhukNgyBRk" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1700-1800</b>
+	                                                <br>
+	                                                小九 😥 vs ┉╃晚風 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/1BL1h3VPV8I" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1900-2000</b>
+	                                                <br>
+	                                                我要吃薯條 😥 vs 蜗牛 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/KtoPHFDArDU" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年9月25日（星期六）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1300-1400</b>
+	                                                <br>
+	                                                咸鱼一条 😥 vs 孤战 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/O9AkGcLPQxo" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1500-1600</b>
+	                                                <br>
+	                                                小可爱来了 😁 vs ღ小灰ღ 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/UN0ggUl62fo" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1700-1800</b>
+	                                                <br>
+	                                                黑蔷薇ღ 😁 vs 沈恩惠 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/tX0qyBHQ94k" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1900-2000</b>
+	                                                <br>
+	                                                龍根 😁 vs ღ蓝鱼ღ 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/wXxX7LSFb0k" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+	                	<!-- 32进16 -->
+                        <div class="small-container">
+                            <div class="container" id="container-2">
+                                <div class="title main-title" id="title-2">
+                                    <span>
+                                        32进16
+                                    </span>
+                                </div>
+                                <div id="content-2">
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年9月27日（星期一）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1400-1500</b>
+	                                                <br>
+	                                                ➶小无赖﹍๑ 😥 vs 慈慈 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/wYsOVkDlw0U" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1600-1700</b>
+	                                                <br>
+	                                                黑蔷薇ღ 😁 vs よ網.等毕业 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/81gGXuUWt_U" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年9月28日（星期二）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1400-1500</b>
+	                                                <br>
+	                                                小枫 😥 vs 葡萄杰 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/A-ZRPgiHFHA" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1600-1700</b>
+	                                                <br>
+	                                                宠妻の王子 😥 vs 奇幻の夜神 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/W0UqriJ6heU" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年9月29日（星期三）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1400-1500</b>
+	                                                <br>
+	                                                星尘龙ღ 😁 vs 孤战 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/a2rqLXCO3fA" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1600-1700</b>
+	                                                <br>
+	                                                ★Queen vs 龍根 😁
+	                                                <a href="#" class="qq">玩家弃权</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1900-2000</b>
+	                                                <br>
+	                                                ㄨ欲望ㄨ 😥 vs 摆渡人 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/AfqLogFvxHo" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年9月30日（星期四）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1400-1500</b>
+	                                                <br>
+	                                                女人 😥 vs 冰╮ιCe┉╃ 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/v86McQEZx50" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1600-1700</b>
+	                                                <br>
+	                                                多雲ღ 😁 vs 无课玩家 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/6LF2VabuvDU" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年10月1日（星期五）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1900-2000</b>
+	                                                <br>
+	                                                ☪ゞ瑄瑄އއ* 😁 vs 最后的温柔 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/XgQjeBegVJ8" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年10月2日（星期六）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1600-1700</b>
+	                                                <br>
+	                                                梧桐 vs 神奇の咖啡 😁
+	                                                <a href="#" class="qq">玩家弃权</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1800-1900</b>
+	                                                <br>
+	                                                小紅兒 😥 vs 蜗牛 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/_g61tageSmU" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1900-2000</b>
+	                                                <br>
+	                                                外掛 😥 vs 艾斯Ace 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/4e88gCodbqU" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+	                                    <div class="title">
+	                                        2021年10月3日（星期日）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1400-1500</b>
+	                                                <br>
+	                                                暴风 😥 vs ┉╃晚風 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/zL_mCJOwK3M" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1600-1700</b>
+	                                                <br>
+	                                                波加曼° 😥 vs LUVRYUJIN 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/QotOCSrk2dw" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1900-2000</b>
+	                                                <br>
+	                                                憨憨大叔 😥 vs 小可爱来了 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/kRzx4RilgY8" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+	                	<!-- 16进8 -->
+                        <div class="small-container">
+                            <div class="container" id="container-3">
+                                <div class="title main-title" id="title-3">
+                                    <span>
+                                        16进8
+                                    </span>
+                                </div>
+                                <div id="content-3">
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年10月6日（星期三）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1600-1700</b>
+	                                                <br>
+	                                                慈慈 😥 vs 黑蔷薇ღ 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/nNDFAQQsw_A" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1900-2000</b>
+	                                                <br>
+	                                                蜗牛 😁 vs 小可爱来了 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/mHMyB24oKvE" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年10月7日（星期四）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1400-1500</b>
+	                                                <br>
+	                                                星尘龙ღ 😥 vs 龍根 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/OQn3MCEjCxQ" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1600-1700</b>
+	                                                <br>
+	                                                冰╮ιCe┉╃ 😁 vs 多雲ღ 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/lHLo82dqcvo" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年10月8日（星期五）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1600-1700</b>
+	                                                <br>
+	                                                摆渡人 😥 vs 艾斯Ace 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/9I5fuCPEsQs" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1900-2000</b>
+	                                                <br>
+	                                                ☪ゞ瑄瑄އއ* 😥 vs LUVRYUJIN 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/35fPaodi3O8" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年10月9日（星期六）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1400-1500</b>
+	                                                <br>
+	                                                葡萄杰 😁 vs 奇幻の夜神 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/mx2x74j5UmE" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1600-1700</b>
+	                                                <br>
+	                                                神奇の咖啡 😁 vs 晚風
+	                                                <a href="#" class="qq">玩家弃权</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+	                	<!-- 8进4 -->
+                        <div class="small-container">
+                            <div class="container" id="container-4">
+                                <div class="title main-title" id="title-4">
+                                    <span>
+                                        8进4
+                                    </span>
+                                </div>
+                                <div id="content-4">
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年10月12日（星期二）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1700-1800</b>
+	                                                <br>
+	                                                龍根 😥 vs 冰╮ιCe┉╃ 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/z-rSKPgBQLE" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>2000-2100</b>
+	                                                <br>
+	                                                黑蔷薇ღ 😁 vs 葡萄杰 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/kE7EPgYXR38" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年10月14日（星期四）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1600-1700</b>
+	                                                <br>
+	                                                艾斯Ace 😁 vs 神奇の咖啡 😥
+	                                                <br>
+	                                                <a href="https://youtu.be/U7O743mb7o8" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1900-2000</b>
+	                                                <br>
+	                                                LUVRYUJIN 😥 vs 蜗牛 😁
+	                                                <br>
+	                                                <a href="https://youtu.be/DH_aJsfkm4Y" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+	                	<!-- 半决赛 -->
+                        <div class="small-container">
+                            <div class="container" id="container-5">
+                                <div class="title main-title" id="title-5">
+                                    <span>
+                                        半决赛
+                                    </span>
+                                </div>
+                                <div id="content-5">
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年10月16日（星期六）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1600-1700</b>
+	                                                <br>
+	                                                黑蔷薇ღ 😥 vs 冰╮ιCe┉╃ 😁
+	                                                <br>
+	                                                <a href="https://fb.watch/8WgkyRlmoW/" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>1800-1900</b>
+	                                                <br>
+	                                                艾斯Ace 😥 vs 蜗牛 😁
+	                                                <br>
+	                                                <a href="https://fb.watch/8WgjizHAWv/" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>2000-2100</b>
+	                                                <br>
+	                                                黑蔷薇ღ 😁 vs 艾斯Ace 😥
+	                                                <br>
+	                                                <a href="https://fb.watch/8WggHIILbY/" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+	                	<!-- 决赛 -->
+                        <div class="small-container">
+                            <div class="container" id="container-6">
+                                <div class="title main-title" id="title-6">
+                                    <span>
+                                        决赛
+                                    </span>
+                                </div>
+                                <div id="content-6">
+                                	<div class="small-section">
+                                		<div class="title">
+	                                        2021年10月17日（星期日）
+	                                    </div>
+	                                    <div class="grid">
+	                                        <div class="contain">
+	                                            <div class="inter">
+	                                                <b>2000-2100</b>
+	                                                <br>
+	                                                冰╮ιCe┉╃ 😁 vs 蜗牛 😥
+	                                                <br>
+	                                                <a href="https://fb.watch/8WgbxQZPYh/" class="video">点击观看</a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+	                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script>
+function openEventP(evt, cityName) {
+    var i, linkscontent, links;
+    linkscontent = document.getElementsByClassName("links-content");
+    for (i = 0; i < linkscontent.length; i++) {
+        linkscontent[i].style.display = "none";
+    }
+    links = document.getElementsByClassName("links");
+    for (i = 0; i < links.length; i++) {
+        links[i].className = links[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("DOpen").click();
+</script>
+<script src="js/cnheader2.js"></script>
+</html>

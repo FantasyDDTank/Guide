@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>奇幻弹弹堂 - 公会登录页面</title>
+    <link rel="stylesheet" type="text/css" href="Gh.css">
+</head>
+<body>
+    <!-- Nav -->
+    <nav id="header">
+        <div class="header-content">
+            <!-- Nav - Mobile -->
+            <ul class="header-content-mobile">
+                <li class="header-item header-menuicon">
+                    <label class="header-menuicon-label">
+                        <span class="header-menuicon-bread header-menuicon-bread-top">
+                            <span class="header-menuicon-bread-crust header-menuicon-bread-crust-top"></span>
+                        </span>
+                        <span class="header-menuicon-bread header-menuicon-bread-bottom">
+                            <span class="header-menuicon-bread-crust header-menuicon-bread-crust-bottom"></span>
+                        </span>
+                    </label>
+                </li>
+                <li class="header-item header-item-logo">
+                    <a class="header-link mobile-logo" href="index.html">
+                        <button class="logo">奇幻弹弹堂</button>
+                    </a>
+                </li>
+            </ul>
+            <!-- Nav - Quick Links -->
+            <div class="list-container">
+                <ul class="header-list">
+                    <li class="header-item header-item-logo">
+                        <a class="header-link" href="index.html">
+                            <button class="logo">奇幻弹弹堂</button>
+                        </a>
+                    </li>
+                    <li class="header-item header-item-menu">
+                        <a class="header-link header-links" href="GameScript.html">
+                            <button class="link">
+                                副本
+                                <span class="des">
+                                    与副本相关的内容
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links" href="Bugcom.html">
+                            <button class="link">
+                                漏洞合集
+                                <span class="des">
+                                    游戏漏洞和解决方法
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links" href="Topup.html">
+                            <button class="link">
+                                充值配套
+                                <span class="des">
+                                    对比和生成低配、高配和顶配
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links" href="Tec.html">
+                            <button class="link">
+                                技术赛
+                                <span class="des">
+                                    第一届技术赛对局内容
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links last current" href="Gh.html">
+                            <button class="link">
+                                公会专属
+                                <span class="des">
+                                    【傲视天下】公会会员专属登录页面
+                                </span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header-blur"></div>
+    <script src="js/header.js"></script>
+    <!-- Main -->
+    <main class="main">
+        <!-- Main -Ribbon -->
+        <section class="homepage-section collection-module">
+            <div class="module-content">
+                <div class="ribbon-notice">
+                    <div class="section-content section-content-notice">
+                        <span class="ribbon-copy variant">
+                            本网页由玩家所创，非官方所经营。以下所有内容有任何错误，还请海涵。
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Main Content -->
+        <section class="main-module">
+            <div class="section-content">
+                <div class="contain-container">
+                    <div class="grid-container">
+                        <div class="small-container information">
+                            <div class="container">
+                                <div class="title">
+                                    <span>
+                                        ⚠警告⚠
+                                    </span>
+                                </div>
+                                <br>
+                                <div class="content">
+                                    <span>
+                                        此页面属于【傲视天下】公会会员专属。非本会会员无法登录,请退出此页面。
+                                        <br><br>
+                                        【傲视天下】公会会员请在微信群里索取用户名和密码。
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="signin">
+                            <div class="container">
+                                <div class="signin-title">
+                                    <span>
+                                        请登录
+                                    </span>
+                                </div>
+                                <form action="IPT/gh.html" method="get" onsubmit="return SignIn()" autocomplete="off">
+                                    <div class="form-textbox" id="text-box-1">
+                                        <input id="username" pattern="\w+" type="text" class="form-textbox-input" onblur="myS3Function()" autocomplete="off" value>
+                                        <span class="form-textbox-label">用户ID</span>
+                                        <div class="form-message-wrapper">
+                                            <span class="form-message">用户ID未填写。</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-textbox" id="text-box-2">
+                                        <input id="password" pattern="\w+" type="password" class="form-textbox-input" onblur="myS4Function()" autocomplete="off" value>
+                                        <span class="form-textbox-label">密码</span>
+                                        <div class="form-message-wrapper">
+                                            <span class="form-message">密码未填写。</span>
+                                        </div>
+                                    </div>
+                                    <div class="sign-in-submit">
+                                        <button class="form-button" id="sign-in-btn" type="submit">
+                                            <span>登录</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script type="text/javascript" src="js/R&L.js"></script>
+</html>

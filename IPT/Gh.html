@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>奇幻弹弹堂 - 进阶指南</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="gh.css">
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav id="header">
+        <div class="header-content">
+            <!-- Nav - Mobile -->
+            <ul class="header-content-mobile">
+                <li class="header-item header-menuicon">
+                    <label class="header-menuicon-label">
+                        <span class="header-menuicon-bread header-menuicon-bread-top">
+                            <span class="header-menuicon-bread-crust header-menuicon-bread-crust-top"></span>
+                        </span>
+                        <span class="header-menuicon-bread header-menuicon-bread-bottom">
+                            <span class="header-menuicon-bread-crust header-menuicon-bread-crust-bottom"></span>
+                        </span>
+                    </label>
+                </li>
+                <li class="header-item header-item-logo">
+                    <a class="header-link mobile-logo" href="index.html">
+                        <button class="logo">奇幻弹弹堂</button>
+                    </a>
+                </li>
+            </ul>
+            <!-- Nav - Quick Links -->
+            <div class="list-container">
+                <ul class="header-list">
+                    <li class="header-item header-item-logo">
+                        <a class="header-link" href="index.html">
+                            <button class="logo">奇幻弹弹堂</button>
+                        </a>
+                    </li>
+                    <li class="header-item header-item-menu">
+                        <a class="header-link header-links" href="../GameScript.html">
+                            <button class="link">
+                                副本
+                                <span class="des">
+                                    与副本相关的内容
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links" href="../Bugcom.html">
+                            <button class="link">
+                                漏洞合集
+                                <span class="des">
+                                    游戏漏洞和解决方法
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links" href="../Topup.html">
+                            <button class="link">
+                                充值配套
+                                <span class="des">
+                                    对比和生成低配、高配和顶配
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links" href="../Tec.html">
+                            <button class="link">
+                                技术赛
+                                <span class="des">
+                                    第一届技术赛对局内容
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links last current" href="Gh.html">
+                            <button class="link">
+                                公会专属
+                                <span class="des">
+                                    【傲视天下】公会会员专属登录页面
+                                </span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header-blur"></div>
+    <script src="../js/header.js"></script>
+    <!-- Main -->
+    <main class="main">
+        <!-- Main -Ribbon -->
+        <section class="homepage-section collection-module">
+            <div class="module-content">
+                <div class="ribbon-notice">
+                    <div class="section-content section-content-notice">
+                        <span class="ribbon-copy variant">
+                            <b>警告</b>：请勿泄露本网页的任何资料包括用户名和密码！
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Main Content -->
+        <section class="main-module">
+            <div class="section-content">
+                <div class="wrapper">
+                    <div class="wrapper-container">
+                        <div class="wrapper-background">
+                            <div class="wrapper-box">
+                                <div class="box">
+                                    <button class="links" onclick="openEventP(event, 'NEW')" id="DOpen">新手篇</button>
+                                    <button class="links" onclick="openEventP(event, 'SPT')" id="two">脚本篇</button>
+                                    <button class="links" onclick="openEventP(event, 'CiS')" id="three">城市争夺</button>
+                                    <div class="segmentnav-selection-background"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 新手篇 -->
+                <div id="NEW" class="links-content">
+                    <!-- 标题 -->
+                    <div class="title-container">
+                        <div class="container">
+                            <div class="title">
+                                <span>
+                                    新手篇
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contain-container">
+                        <!-- 注意 -->
+                        <div class="small-container information">
+                            <div class="container">
+                                <div class="title">
+                                    <span>
+                                        注意
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    <span>
+                                        请没充值的新手先到游戏内的  <b>活动 > 限时活动 > 【福利】新手礼包</b>  领取新手礼包并穿戴。完成后即可开始阅读。
+                                        <br><br>
+                                        对于一个新手来说最重要的是“属性”，并不是“战力”！所以应该以提升属性为主，其中以“攻击”和“敏捷”最为重要，需作为主要提升的属性。
+                                        <br><br>
+                                        新手前期需完成的：打造、坐骑、图腾、附魔、宠物。
+                                        <br><br>
+                                        快速完成以上所列的方法就是挑战副本并完成【日常副本】里的【每日】的任务。
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 卡【每日】任务 -->
+                        <div class="small-container">
+                            <div class="container">
+                                <div class="title">
+                                    <span>
+                                        卡【每日】任务
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    <span>
+                                        新手开始挑战副本前，需要学习如何“卡”【每日】任务。
+                                        <br><br>
+                                        <span class="ATT"><b>警告：</b>切勿在任何官方群或者公开群提及“每日Bug”。</span>
+                                        <br><br>
+                                        这里以【蚂蚁之巢】为例。挑战完成后“通知栏”将会如下图所示。
+                                    </span>
+                                    <br>
+                                    <img src="image/001.jpg">
+                                    <span>
+                                        点击粉色的“领取奖励”领取你要的素材。接着，再挑战一场【蚂蚁之巢】。完成后没有显示以上图片所示的通知，请不要惊慌。请点击通知栏的“上滚”寻找上一场挑战【蚂蚁之巢】所显示的通知，并点击粉色的“领取奖励”，即可领取你要的素材。从第三场开始“任务”就会开始闪烁，请点击“任务”进行奖励领取。
+                                        <br><br>
+                                        <span class="ATT"><b>注意：</b>（一）退出登录，卡副本失效，需要重新操作以上步骤。（二）挑战不同的【每日】副本需要重复以上操作，换而言之挑战同一个副本只需要操作一次。</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 消除大师小撇步 -->
+                        <div class="small-container">
+                            <div class="container">
+                                <div class="title">
+                                    <span>
+                                        消除大师小撇步
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    <span>
+                                        先买好一定的步数，再把点券全部存进银行（记得是存“活期”，才能随时取出来）。开启连点器点击使用炸弹，这时候将不会消耗点券。
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 脚本篇 -->
+                <div id="SPT" class="links-content">
+                    <!-- 标题 -->
+                    <div class="title-container">
+                        <div class="container">
+                            <div class="title">
+                                <span>
+                                    脚本篇
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contain-container">
+                        <!-- 注意 -->
+                        <div class="small-container information">
+                            <div class="container text">
+                                <div class="title">
+                                    <span>
+                                        介绍与入门
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    <span>
+                                        在此游戏里，“脚本”的意思就是解放双手帮你完成你指定的操作。通常用于挑战副本获得素材。
+                                        <br><br>
+                                        <span class="ATT"><b>警告：</b>切勿在任何官方群或者公开群提及“脚本”。</span>
+                                        <br><br>
+                                        市面上有众多的软件能执行“脚本”指令，但这里推荐“<a href="https://www.jitbit.com/macro-recorder/">Jitbit Macro Recorder</a>”。玩家可以在网上或者油管（YouTube）上找到相关的破解视频或者解密钥匙。这里提供了一个账号和密码；
+                                        <br><br>
+                                        <b>Username:</b> On HAX
+                                        <br>
+                                        <b>Serial Number:</b> ENokcYSKQS1XsrhrqKC6j+ieiSJkwolCD9ZBFro59VlmwKz/J4AfCP7+
+                                        <br><br>
+                                        下载完成并输入密钥后即可开始录制。首先，点击“Record”开始操作。操作结束后点击“Stop”，随后点击“Play”即可。如需要无限的执行指令，需要到“Settings” > “Playback settings”，将“replay”改成0 time即可。
+                                        <br><br>
+                                        以下是能执行脚本的副本以及方法：
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-container">
+                            <div class="search-placeholder-bar">
+                                <form id="search-placeholder" class="search-placeholder-input">
+                                    <div class="search-placeholder-input-text">
+                                        <input type="text" id="myInput" class="searchform-input" onkeyup="myS1Function()" placeholder="搜索副本" autocorrect="off" autocomplete="off">
+                                        <button class="searchform-icon" type="submit" disabled></button>
+                                        <button id="search-reset" class="searchform-reset" onclick="document.getElementById('myInput').value = ''" disabled>
+                                            <span class="reset-icon"></span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <ul id="myUL">
+                            <!-- 普通副本-魔蚁之巢 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-魔蚁之巢
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>方式一</b>
+                                            <br>
+                                            <b>攻击方式：</b>引导 + x3 + 50%
+                                            <br>
+                                            <b>脚本方式：</b>角度：+30 力度：60
+                                            <br><br>
+                                            <b>方式二</b>
+                                            <br>
+                                            <b>攻击方式：</b>引导 + +2 + x3 + 50%
+                                            <br>
+                                            <b>脚本方式：</b>力度：60 攻击丢出后提高角度（大约34度）
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 普通副本-小鸡快跑 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-小鸡快跑
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>攻击方式：</b>（顺序一）x3 + +1 （顺序二）空打
+                                            <br>
+                                            <b>脚本方式：</b>（顺序一）向左 角度：+20 力度：60 攻击丢出后调低角度（10度） （顺序二）向右 力度：40
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 普通副本-啵咕王城 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-啵咕王城
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>攻击方式：</b>x3 + 50%
+                                            <br>
+                                            <b>脚本方式：</b>角度：+10 力度：45
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 普通副本-邪神部落 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-邪神部落
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>回合一</b>
+                                            <br>
+                                            <b>攻击方式：</b>x3 + 50%
+                                            <br>
+                                            <b>脚本方式：</b>角度：+25 力度：42
+                                            <br><br>
+                                            <b>回合二</b>
+                                            <br>
+                                            <b>攻击方式：</b>+2 + x3 + 50%
+                                            <br>
+                                            <b>脚本方式：</b>角度：+25 力度：42 攻击丢出后调低角度（每一发降低5~6度）
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 普通副本-黑暗堡垒 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-黑暗堡垒
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>回合一</b>
+                                            <br>
+                                            向左飞 角度：-15 力度：36
+                                            <br><br>
+                                            <b>回合二</b>
+                                            <br>
+                                            角度：+38 打自己集怒气
+                                            <br><br>
+                                            <b>回合三</b>
+                                            <br>
+                                            用引导 + +2 + +2 + POW打鬼火 力度：75 攻击丢出去后慢慢把角度调到最高
+                                            <br><br>
+                                            <b>回合四</b>
+                                            <br>
+                                            向右边 角度：最高 力度：57 打BOSS
+                                            <br><br>
+                                            <span class="ATT"><b>注意：</b>（一）记录脚本时需要等待倒数秒数剩余4s时才开始使用道具和攻击。（二）此脚本还是有极小的几率无法清完鬼火。</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 普通副本-龙巢之战 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-龙巢之战
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>方式一</b>
+                                            <br>
+                                            <b>攻击方式：</b>50%
+                                            <br>
+                                            <b>脚本方式：</b>（顺序一）向右飞 角度：+25 力度：22 （顺序二）角度：+15 力度：46
+                                            <br><br>
+                                            <b>方式二</b>
+                                            <br>
+                                            <b>攻击方式：</b>+2 + +2 + 50% + POW
+                                            <br>
+                                            <b>脚本方式：</b>（顺序一）第一回合先打自己集怒气（顺序二）角度：最高 力度：50~55（顺序三）攻击丢出去后调低角度
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 普通副本-啵咕运动会 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-啵咕运动会
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>攻击方式：</b>50%
+                                            <br>
+                                            <b>脚本方式：</b>力度：1
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 普通副本-时空漩涡 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-时空漩涡
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>攻击方式：</b>x3 + 50%
+                                            <br>
+                                            <b>脚本方式：</b>角度：+35 力度：28~30
+                                            <br><br>
+                                            <span class="ATT"><b>注意：</b>记录脚本时需要等待倒数秒数剩余4s时才开始使用道具和攻击。</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 普通副本-萌爱副本 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-萌爱副本
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>攻击方式：</b>引导 + +2 + x3 + 50%（伤害不够先打自己一轮 引导 + +2 + +2 + 50% + POW）
+                                            <br>
+                                            <b>脚本方式：</b>角度：+20 力度：40
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 普通副本-足球副本 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-足球副本
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>攻击方式：</b>+2 + x3 + 50%（伤害不够先打自己一轮 +2 + +2 + 50% + POW）
+                                            <br>
+                                            <b>脚本方式：</b>力度：37
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 普通副本-暴富副本 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-暴富副本
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>攻击方式：</b>引导 + +2 + +2 + 50% + POW
+                                            <br>
+                                            <b>脚本方式：</b>角度：+5 力度：45
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 普通副本-奇幻海域 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            普通副本-奇幻海域
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>攻击方式：</b>穿甲 + +2 + +2 + 50% + POW（伤害不够先开重创往左爬一点打一轮，下一轮开穿甲打）
+                                            <br>
+                                            <b>脚本方式：</b>力度：50
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 单人副本-勇士试炼3 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            单人副本-勇士试炼3（单人3）
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>攻击方式：</b>引导 + +2 + x3 + 50%
+                                            <br>
+                                            <b>脚本方式：</b>角度：+10 力度：40
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 单人副本-勇士试炼4 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            单人副本-勇士试炼4（单人4）
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>攻击方式：</b>引导 + +2 + x3 + 50%
+                                            <br>
+                                            <b>脚本方式：</b>角度：+35 力度：40
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 活动副本-冰雪之城（简单） -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            活动副本-冰雪之城（简单）
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>攻击方式：</b>x3 + 50%
+                                            <br>
+                                            <b>脚本方式：</b>角度：+35 力度：80
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 活动副本-冰雪之城 （英雄）-->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            活动副本-冰雪之城（英雄）
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>S1</b>
+                                            <br>
+                                            <b>回合一</b>
+                                            <br>
+                                            面向右边 打自己集怒气
+                                            <br><br>
+                                            <b>回合二</b>
+                                            <br>
+                                            PASS
+                                            <br><br>
+                                            <b>回合三</b>
+                                            <br>
+                                            PASS
+                                            <br><br>
+                                            <b>回合四</b>
+                                            <br>
+                                            <b>攻击方式：</b>引导 + +2 + +2 + 50% + POW
+                                            <br>
+                                            <b>脚本方式：</b>力度：40 攻击丢出去后慢慢地把角度调到最高
+                                            <br><br>
+                                            <b>S2</b>
+                                            <br>
+                                            面向右边
+                                            <br>
+                                            <b>攻击方式：</b>x3 + 50%
+                                            <br>
+                                            <b>脚本方式：</b>角度：+35 力度：80
+                                            <br><br>
+                                            <span class="ATT"><b>注意：</b>记录脚本时需要等待倒数秒数剩余4s时才开始使用道具和攻击。</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 高级副本-勇士竞技场（普通 / 英雄） -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            高级副本-勇士竞技场（普通 / 英雄）
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            <b>攻击方式：</b>50%
+                                            <br>
+                                            <b>脚本方式：</b>力度：70
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 城市争夺 -->
+                <div id="CiS" class="links-content">
+                    <!-- 标题 -->
+                    <div class="title-container">
+                        <div class="container">
+                            <div class="title">
+                                <span>
+                                    城市争夺
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contain-container">
+                        <!-- 注意 -->
+                        <div class="small-container information">
+                            <div class="container text">
+                                <div class="title">
+                                    <span>
+                                        资讯
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    进入城市争夺首先要先选择蓝方或者红方。只有蓝方或者红方其中一方的一个玩家拥有最高积分才能成为领主。积分会在每日的中午12时进行结算，成为领主的玩家就会获得领主奖励。领主奖励每日都不一样。玩家可以通关“鼓舞”获得积分，5,600点券：1积分。
+                                </div>
+                                <br>
+                                <div class="title">
+                                    <span>
+                                        领主奖励
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    <span>
+                                        <b>星期一 - 巢穴领主礼包</b>
+                                        <br>
+                                        开孔钻头5级*50，进阶石*50，紫晶石*100，魔法修炼药水2级*50，糖糖淑女称号卡*1
+                                        <br>
+                                        <b>随机获得</b>：兔包车图鉴卡，萌兔图鉴卡，竹熊猫图鉴卡
+                                        <br><br>
+                                        <b>星期二 - 王城精锐礼包</b>
+                                        <br>
+                                        金沙*100，高级祭品*200，修炼药水4级*20，弹弹绅士称号卡*1，高级魔石*20
+                                        <br>
+                                        <b>随机获得</b>：猴塞雷召唤卡，喵喵召唤卡，暴力熊召唤卡
+                                        <br><br>
+                                        <b>星期三 - 黑暗祭祀礼包</b>
+                                        <br>
+                                        超级经验药水*500，淡雅脱俗称号卡*1
+                                        <br>
+                                        <b>随机获得</b>：大力神，极·垂云竿，啵咕盾牌
+                                        <br><br>
+                                        <b>星期四 - 暗夜统领礼包</b>
+                                        <br>
+                                        情定终生+4*1，翔·天使之赐*1，时尚靓丽称号卡*1，卓越四象魔石*3
+                                        <br><br>
+                                        <b>星期五 - 屠龙勇士礼包</b>
+                                        <br>
+                                        远古幼龙高级封印*10，上古魔蛇高级封印*10，冰晶凤凰高级封印*10
+                                        <br><br>
+                                        <b>星期六 - 时空旅人礼包</b>
+                                        <br>
+                                        幸运神old
+                                        <br><br>
+                                        <b>星期日</b>
+                                        <br>
+                                        开孔钻头3级*4，开孔钻头5级*4，未卜先知称号卡*1
+                                        <br>
+                                        <b>随机获得</b>：21级伤害宝珠*1，21级护甲宝珠*1，21级攻击宝珠*1，3级攻伤宝珠*1
+                                        <br><br>
+                                        <b>**以下是公会会员【城市争夺】每日轮流获得领主的列表**</b>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <!-- 星期一 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            星期一
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            •   𝒳ღ<br>
+                                            •   辉少<br>
+                                            •   ༄あ七ღ
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 星期二 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            星期二
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            •   秦深<br>
+                                            •   辉少<br>
+                                            •   ༄あ七ღ
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 星期三 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            星期三
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            •   辉少<br>
+                                            •   念๓<br>
+                                            •   冰╮ιCe┉╃<br>
+                                            •   ☪ゞ瑄瑄އއ<br>
+                                            •   ༄あ七ღ
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 星期四 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            星期四
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            •   念๓<br>
+                                            •   ༄あ七ღ
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 星期五 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            星期五
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            •   念๓
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 星期六 -->
+                            <li class="small-container">
+                                <div class="container">
+                                    <div class="title">
+                                        <a>
+                                            星期六
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <span>
+                                            •   暮光<br>
+                                            •   小可爱来了<br>
+                                            •   ☪ゞ瑄瑄އއ<br>
+                                            •   ༄あ七ღ<br>
+                                            •   辉少
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script>
+function openEventP(evt, cityName) {
+    var i, linkscontent, links;
+    linkscontent = document.getElementsByClassName("links-content");
+    for (i = 0; i < linkscontent.length; i++) {
+        linkscontent[i].style.display = "none";
+    }
+    links = document.getElementsByClassName("links");
+    for (i = 0; i < links.length; i++) {
+        links[i].className = links[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("DOpen").click();
+</script>
+<script type="text/javascript">
+function myS1Function() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+    if (input.value.length > 0) {
+        document.getElementById("search-placeholder").classList.add("withreset");
+        document.getElementById("search-reset").disabled = false;
+    } else {
+        document.getElementById("search-placeholder").classList.remove("withreset");
+        document.getElementById("search-reset").disabled = true;
+    }
+}
+</script>
+
+</html>

@@ -1187,3 +1187,50 @@ main {
     display: inline-block;
     pointer-events: none;
 }
+
+#UserName,
+#PassW {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0;
+    pointer-events: none;
+    border: 1px solid #d2d2d7;
+    background-color: #fff;
+    border-radius: 6px;
+    color: #1d1d1f;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: normal;
+    padding: 3px 5px;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    height: 21px;
+    width: 120px;
+    position: relative;
+}
+
+.copy-button{
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0;
+    pointer-events: auto;
+    border: none;
+    background-color: #000;
+    border-radius: 6px;
+    color: #fff;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: normal;
+    padding: 3px 5px;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    height: 21px;
+    position: relative;
+    cursor: pointer;
+}

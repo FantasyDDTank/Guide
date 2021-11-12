@@ -411,6 +411,7 @@ body.lock {
 
     #header .header-content-mobile .header-item-logo {
         display: block;
+        padding: 9px 0;
     }
 
     #header .mobile-logo {
@@ -552,7 +553,7 @@ body.lock {
         width: 100%;
         padding-left: 15px;
         padding-right: 15px;
-        padding-top: 30px;
+        padding-top: 25px;
         padding-bottom: 15px;
         border-radius: 20px;
         background: #0030A7;

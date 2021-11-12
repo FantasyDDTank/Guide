@@ -3,8 +3,8 @@ const second02 = 1000,
     hour02 = minute02 * 60,
     day02 = hour02 * 24;
 
-let starttime02 = new Date('November 1, 2021 00:00:00').getTime();
-let countDown02 = new Date('November 9, 2021 00:00:00').getTime(),
+let starttime02 = new Date('November 11, 2021 00:00:00').getTime();
+let countDown02 = new Date('November 18, 2021 00:00:00').getTime(),
     y = setInterval(function() {
 
         let now02 = new Date().getTime(),

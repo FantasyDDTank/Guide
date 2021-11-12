@@ -48,7 +48,7 @@
                                 </span>
                             </button>
                         </a>
-                        <a class="header-link header-links" href="bugcom.html">
+                        <a class="header-link header-links" href="Bugcom.html">
                             <button class="link">
                                 漏洞合集
                                 <span class="des">
@@ -95,7 +95,7 @@
                 <div class="ribbon-notice">
                     <div class="section-content section-content-notice">
                         <span class="ribbon-copy variant">
-                            本网页由玩家所创，非官方所经营。以下所有内容有任何错误，还请海涵。内容将持续更新，敬请期待!
+                            本网页由玩家所创，非官方所经营。以下所有内容有任何错误，还请海涵。
                         </span>
                     </div>
                 </div>
@@ -142,13 +142,23 @@
                                     <span>
                                         以下内容可采用搜索的方式来搜索。
                                         <br><br>
-                                        【奇幻】万圣节糖果，【奇幻】鬼魂，【奇幻】南瓜👉一概输入【奇幻活动素材】
+                                        【奇幻】万圣节糖果，【奇幻】鬼魂，【奇幻】南瓜 👉 一概输入【奇幻活动素材】
                                     </span>
                                 </div>
                             </div>
                         </div>
                         <div class="search-container">
-                            <input type="text" id="myInput" onkeyup="myS1Function()" placeholder="输入“素材”或者“副本”名字" title="输入名字">
+                            <div class="search-placeholder-bar">
+                                <form id="search-placeholder" class="search-placeholder-input">
+                                    <div class="search-placeholder-input-text">
+                                        <input type="text" id="myInput" class="searchform-input" onkeyup="myS1Function()" placeholder="搜索素材和副本" autocorrect="off" autocomplete="off">
+                                        <button class="searchform-icon" type="submit" disabled></button>
+                                        <button id="search-reset" class="searchform-reset" onclick="document.getElementById('myInput').value = ''" disabled>
+                                            <span class="reset-icon"></span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                         <ul id="myUL">
                             <li class="small-container">
@@ -707,7 +717,17 @@
                             </div>
                         </div>
                         <div class="search-container">
-                            <input type="text" id="myInput2" onkeyup="myS2Function()" placeholder="输入“副本”名字" title="输入名字">
+                            <div class="search-placeholder-bar">
+                                <form id="search-placeholder2" class="search-placeholder-input">
+                                    <div class="search-placeholder-input-text">
+                                        <input type="text" id="myInput2" class="searchform-input" onkeyup="myS2Function()" placeholder="搜索副本" autocorrect="off" autocomplete="off">
+                                        <button class="searchform-icon" type="submit" disabled></button>
+                                        <button id="search-reset2" class="searchform-reset" onclick="document.getElementById('myInput2').value = ''" disabled>
+                                            <span class="reset-icon"></span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                         <ul id="myUL2">
                             <li class="small-container">
@@ -873,6 +893,13 @@ function myS1Function() {
             li[i].style.display = "none";
         }
     }
+    if (input.value.length > 0) {
+        document.getElementById("search-placeholder").classList.add("withreset");
+        document.getElementById("search-reset").disabled = false;
+    } else {
+        document.getElementById("search-placeholder").classList.remove("withreset");
+        document.getElementById("search-reset").disabled = true;
+    }
 }
 </script>
 <script type="text/javascript">
@@ -891,7 +918,13 @@ function myS2Function() {
             li[i].style.display = "none";
         }
     }
+    if (input.value.length > 0) {
+        document.getElementById("search-placeholder2").classList.add("withreset");
+        document.getElementById("search-reset2").disabled = false;
+    } else {
+        document.getElementById("search-placeholder2").classList.remove("withreset");
+        document.getElementById("search-reset2").disabled = true;
+    } 
 }
 </script>
-
 </html>

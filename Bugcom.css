@@ -892,7 +892,7 @@ main {
     transform: translateX(300px);
 }
 
-/* 副本掉落 */
+/* 漏洞合集 */
 .main .main-module .section-content .links-content {
     width: 100%;
     height: auto;
@@ -1120,22 +1120,4 @@ main {
     cursor: pointer;
     opacity: 1;
     pointer-events: auto
-}
-
-.main .main-module .section-content .links-content .small-container .container .title .n-s {
-    text-align: center;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: normal;
-    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
-    min-width: 28px;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-top: 1px;
-    border-radius: 4px;
-    background: initial;
-    color: red;
-    border: 1px solid red;
-    display: inline-block;
-    pointer-events: none;
 }

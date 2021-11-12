@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>奇幻弹弹堂 - 漏洞合集</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bugcom.css">
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav id="header">
+        <div class="header-content">
+            <!-- Nav - Mobile -->
+            <ul class="header-content-mobile">
+                <li class="header-item header-menuicon">
+                    <label class="header-menuicon-label">
+                        <span class="header-menuicon-bread header-menuicon-bread-top">
+                            <span class="header-menuicon-bread-crust header-menuicon-bread-crust-top"></span>
+                        </span>
+                        <span class="header-menuicon-bread header-menuicon-bread-bottom">
+                            <span class="header-menuicon-bread-crust header-menuicon-bread-crust-bottom"></span>
+                        </span>
+                    </label>
+                </li>
+                <li class="header-item header-item-logo">
+                    <a class="header-link mobile-logo" href="index.html">
+                        <button class="logo">奇幻弹弹堂</button>
+                    </a>
+                </li>
+            </ul>
+            <!-- Nav - Quick Links -->
+            <div class="list-container">
+                <ul class="header-list">
+                    <li class="header-item header-item-logo">
+                        <a class="header-link" href="index.html">
+                            <button class="logo">奇幻弹弹堂</button>
+                        </a>
+                    </li>
+                    <li class="header-item header-item-menu">
+                        <a class="header-link header-links" href="GameScript.html">
+                            <button class="link">
+                                副本
+                                <span class="des">
+                                    与副本相关的内容
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links current" href="Bugcom.html">
+                            <button class="link">
+                                漏洞合集
+                                <span class="des">
+                                    游戏漏洞和解决方法
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links" href="Topup.html">
+                            <button class="link">
+                                充值配套
+                                <span class="des">
+                                    对比和生成低配、高配和顶配
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links" href="Tec.html">
+                            <button class="link">
+                                技术赛
+                                <span class="des">
+                                    第一届技术赛对局内容
+                                </span>
+                            </button>
+                        </a>
+                        <a class="header-link header-links last" href="gh.html">
+                            <button class="link">
+                                公会专属
+                                <span class="des">
+                                    【傲视天下】公会会员专属登录页面
+                                </span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header-blur"></div>
+    <script src="js/header.js"></script>
+    <!-- Main -->
+    <main class="main">
+        <!-- Main -Ribbon -->
+        <section class="homepage-section collection-module">
+            <div class="module-content">
+                <div class="ribbon-notice">
+                    <div class="section-content section-content-notice">
+                        <span class="ribbon-copy variant">
+                            本网页由玩家所创，非官方所经营。以下所有内容有任何错误，还请海涵。
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Main Content -->
+        <section class="main-module">
+            <div class="section-content">
+                <div class="wrapper">
+                    <div class="wrapper-container">
+                        <div class="wrapper-background">
+                            <div class="wrapper-box">
+                                <div class="box">
+                                    <button class="links" onclick="openEventP(event, 'BC')" id="DOpen">漏洞合集</button>
+                                    <div class="segmentnav-selection-background"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 副本掉落 -->
+                <div id="BC" class="links-content">
+                    <!-- 标题 -->
+                    <div class="title-container">
+                        <div class="container">
+                            <div class="title">
+                                <span>
+                                    漏洞合集
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contain-container">
+                        <!-- 资讯 -->
+                        <div class="small-container information">
+                            <div class="container">
+                                <div class="title">
+                                    <span>
+                                        使用说明
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    <span>
+                                        以下内容可采用搜索的方式来进行搜索。
+                                        <br><br>
+                                        如内容不完善，请见谅。有任何Bug未在下列显示，请寻求客服的帮助。
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-container">
+                            <div class="search-placeholder-bar">
+                                <form id="search-placeholder" class="search-placeholder-input">
+                                    <div class="search-placeholder-input-text">
+                                        <input type="text" id="myInput" class="searchform-input" onkeyup="myFunction()" placeholder="搜索漏洞" autocorrect="off" autocomplete="off">
+                                        <button class="searchform-icon" type="submit" disabled></button>
+                                        <button id="search-reset" class="searchform-reset" onclick="document.getElementById('myInput').value = ''" disabled>
+                                            <span class="reset-icon"></span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <ul id="myUL">
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                邮件
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                无法使用“付款取信”这项功能。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                活动-累积登录
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                第七天（选神器）的奖励不能领取。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                弹弹乐
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                积分不能兑换。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                大富翁
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                格子内的宝物有几率被系统刷新。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                消除大师
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                操作（消除）太快会导致消除的空格不能被填满。
+                                                <br><br>
+                                                <b>解决方法</b>：关闭【消除大师】重新开启。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                城市争夺
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                星期五和星期六的领主奖励是空的。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                世界BOSS
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                （一）使用小鸡 / 小毒鸡的技能【v3炮台】 + 攻击宝珠【吸血】有几率导致玩家直接死亡。
+                                                <br>
+                                                （二）小鸡 / 小毒鸡的技能【v3炮台】点击后没反应。
+                                                <br><br>
+                                                <b>（一）解决方法</b>：在小鸡技能和攻击宝珠【吸血】之间只能选择一个。
+                                                <br>
+                                                <b>（二）解决方法</b>：连续点击该技能直至该技能成功使用。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                探险家手册
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                点击进化没反应（<b>原因</b>：“绑定”和“未绑定”的进化素材不能同时出现在背包）。
+                                                <br><br>
+                                                <b>解决方法</b>：请出售或将其中一种的进化素材放进“保管箱”。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                宝珠
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                （一）高级进阶获得的宝珠消失。
+                                                <br>
+                                                （二）通过每周二和四马来西亚时间晚上七时（1900）到八时（2000）挑战【宝珠副本】所获得的双倍宝珠（获得的双倍宝珠是重叠的）被使用“批量合成”，系统判定为一颗。
+                                                <br><br>
+                                                <b>（一）解决方法</b>：高级进阶时需确保留有至少一页的空白。
+                                                <br>
+                                                <b>（二）解决方法</b>：分离宝珠（通过点击该双倍宝珠再点击空白处进行分离）。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                魔石
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                “探索”，“批量探索”和“魔穴探险”无法使用。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                宠物
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                封印的宠物有极小的几率消失。
+                                                <br><br>
+                                                <b>解决方法</b>：完成封印后，请拍照或者截图保存作为“证据”。如封印的宠物消失，请找客服并出示“证据”。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                保管箱
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                物品有几率消失。
+                                                <br><br>
+                                                <b>解决方法</b>：请时常拍照或者截图保存作为“证据”。如物品消失，请找客服并出示“证据”。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                潜能
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                潜能过期不会马上失效，需要等到隔天才会进行刷新。玩家可以选择在过期后马上进行“潜能激活”。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                铸金（镀金）
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                （一）衣服和帽子不会显示剩余铸金时间。
+                                                <br>
+                                                （二）武器显示无法铸金。
+                                                <br><br>
+                                                <b>（一）解决方法</b>：衣服，帽子和武器同时进行铸金（这样武器铸金过期就表示衣服和帽子的铸金也过期了）。
+                                                <br>
+                                                <b>（二）解决方法</b>：先准备一把+12的普通武器（真·武器 / 极·武器）。拿您需要铸金的武器和您准备的武器互相转换（要铸金的放左边，普通武器放右边）。转换后如果普通武器的形态没有改变（呈现最终形态），那您就可以拿去铸金了。如果转换后普通武器的形态改变（最初形态），您需要重复进行转换。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                精炼
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                “极·圣诞派”无法在精炼内显示。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                副手进化
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                副手的进化等级比要进行“进化”的副手等级还高，该副手有几率被做为养料“吃掉”。
+                                                <br><br>
+                                                <b>解决方法</b>：进行进化前，将重要的副手放进“保管箱”。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                公会战
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                人机的属性是复制“房员”的属性。如果有多位“房员”，系统将复制属性最低的“房员”属性。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                坐骑
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                有几率无法自动升级到下一星（就算打勾了也无法自动升级）。
+                                                <br><br>
+                                                <b>解决方法</b>：续费“弹弹契约”即可。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                农场
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                只有银扭蛋机开放。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                地穴
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                进入5星关卡黑屏。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                前八个普通副本（魔蚁之巢，... 时空漩涡）
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                失败后，下一局从第一关开始。
+                                                <br><br>
+                                                <b>解决方法</b>：失败后退出房间，开启新的房间。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-小鸡快跑
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                攻击BOSS的帽子无法造成伤害。
+                                                <br><br>
+                                                <b>解决方法</b>：尽量攻击BOSS的下半身。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-邪神部落
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                低角度攻击愤怒形态的BOSS，会出现一堵空气墙。
+                                                <br><br>
+                                                <b>解决方法</b>：使用角度16°以上的角度。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-足球副本
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                BOSS有几率消失。
+                                                <br><br>
+                                                <b>解决方法</b>：挑战其他副本。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-齐心合力
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                （一）宠物打人被动技会对“豆豆”造成伤害。
+                                                <br>
+                                                （二）小鸡 / 小毒鸡被动技【自动机枪】也会对“豆豆”造成伤害。
+                                                <br><br>
+                                                <b>（一）解决方法</b>：挑战前取下宠物打人被动技。
+                                                <br>
+                                                <b>（二）解决方法</b>：挑战前取下被动技能【自动机枪】或者携带别只宠物。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-风雨同舟
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                BOSS被打死后立刻复活。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                普通副本-印刻副本
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                第三关有很大的几率打在空气墙上。
+                                                <br><br>
+                                                <b>解决方法</b>：从面向BOSS的方向攻击BOSS。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                单人副本-勇士试炼6
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                有很大的几率打在空气墙上。
+                                                <br><br>
+                                                <b>解决方法</b>：从面向BOSS的方向攻击BOSS。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="small-container">
+                                <div class="container">
+                                    <a>
+                                        <div class="title">
+                                            <span>
+                                                活动副本-冰雪之城（英雄）
+                                            </span>
+                                        </div>
+                                        <div class="content">
+                                            <span>
+                                                第一关的小怪背对着就打不死。
+                                                <br><br>
+                                                <b>解决方法</b>：等他转过来。
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script>
+function openEventP(evt, cityName) {
+    var i, linkscontent, links;
+    linkscontent = document.getElementsByClassName("links-content");
+    for (i = 0; i < linkscontent.length; i++) {
+        linkscontent[i].style.display = "none";
+    }
+    links = document.getElementsByClassName("links");
+    for (i = 0; i < links.length; i++) {
+        links[i].className = links[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("DOpen").click();
+</script>
+<script type="text/javascript">
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+    if (input.value.length > 0) {
+        document.getElementById("search-placeholder").classList.add("withreset");
+        document.getElementById("search-reset").disabled = false;
+    } else {
+        document.getElementById("search-placeholder").classList.remove("withreset");
+        document.getElementById("search-reset").disabled = true;
+    }
+}
+</script>
+
+</html>

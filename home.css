@@ -1309,7 +1309,7 @@ main {
     grid-column: span 1;
     width: calc(100% - 2px);
     height: 0px;
-    border-radius: 12px;
+    border-radius: 16px;
     border: 1px solid #F9CF00;
     background: initial;
     padding: 12px 0;
